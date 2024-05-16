@@ -6,42 +6,43 @@
 
 namespace dotNETGoofV2.Website.Components
 {
-    #line hidden
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Components;
+    #line default
+    using global::System;
+    using global::System.Collections.Generic;
+    using global::System.Linq;
+    using global::System.Threading.Tasks;
+    using global::Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "/Users/mattbrown/Desktop/SME_Work/dotNET-goof-v2/dotNETGoofV2.Website/Components/ProductList.razor"
-using Microsoft.AspNetCore.Components.Web;
+#line 1 "/Users/iuriikogan/Development/github.com/iuriikogan-snyk/dotnet-goof/dotNETGoofV2.Website/Components/ProductList.razor"
+ using Microsoft.AspNetCore.Components.Web
+
+#nullable disable
+    ;
+#nullable restore
+#line 2 "/Users/iuriikogan/Development/github.com/iuriikogan-snyk/dotnet-goof/dotNETGoofV2.Website/Components/ProductList.razor"
+ using dotNETGoofV2.Website.Services
+
+#nullable disable
+    ;
+#nullable restore
+#line 3 "/Users/iuriikogan/Development/github.com/iuriikogan-snyk/dotnet-goof/dotNETGoofV2.Website/Components/ProductList.razor"
+ using dotNetGoofV2.Website.Models
 
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "/Users/mattbrown/Desktop/SME_Work/dotNET-goof-v2/dotNETGoofV2.Website/Components/ProductList.razor"
-using dotNETGoofV2.Website.Services;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 3 "/Users/mattbrown/Desktop/SME_Work/dotNET-goof-v2/dotNETGoofV2.Website/Components/ProductList.razor"
-using dotNetGoofV2.Website.Models;
-
-#line default
-#line hidden
-#nullable disable
-    public partial class ProductList : Microsoft.AspNetCore.Components.ComponentBase
+    ;
+    #nullable restore
+    public partial class ProductList : global::Microsoft.AspNetCore.Components.ComponentBase
+    #nullable disable
     {
         #pragma warning disable 1998
-        protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
+        protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
 #nullable restore
-#line 81 "/Users/mattbrown/Desktop/SME_Work/dotNET-goof-v2/dotNETGoofV2.Website/Components/ProductList.razor"
+#line 81 "/Users/iuriikogan/Development/github.com/iuriikogan-snyk/dotnet-goof/dotNETGoofV2.Website/Components/ProductList.razor"
        
     Product selectedProduct;
     string selectedProductId;
@@ -85,7 +86,25 @@ using dotNetGoofV2.Website.Models;
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private JsonFileProductsService ProductsService { get; set; }
+
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private 
+#nullable restore
+#line 4 "/Users/iuriikogan/Development/github.com/iuriikogan-snyk/dotnet-goof/dotNETGoofV2.Website/Components/ProductList.razor"
+        JsonFileProductsService
+
+#line default
+#line hidden
+#nullable disable
+         
+#nullable restore
+#line 4 "/Users/iuriikogan/Development/github.com/iuriikogan-snyk/dotnet-goof/dotNETGoofV2.Website/Components/ProductList.razor"
+                                ProductsService
+
+#line default
+#line hidden
+#nullable disable
+         { get; set; }
+         = default!;
     }
 }
 #pragma warning restore 1591
