@@ -24,10 +24,17 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Snyk Vulnerability Scan
+    - name: Snyk OS Vulnerability Monitor
       uses: snyk/actions@0.3.0
       env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
         command: monitor
         args: --all-projects --dotnet-runtime-dependencies --dotnet-runtime=net5.0
+    - name: Snyk Code Vulnerability Monitor
+      uses: snyk/actions@0.3.0
+      env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+        command: code monitor
+        args: --all-projects
